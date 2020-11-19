@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+#heart {
+  display: inline-block;
+  margin: 200px;
+  position: relative;
+  display: block;
+  margin: 300px auto;
+  width: 100px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  display: flex;
+}
+.text {
+  position: absolute;
+  line-height: 100px;
+  text-align: center;
+  z-index: 1;
+  top: -40px;
+  left: 8px;
+}
+#heart:hover {
+  transform: scale(20);
+  -webkit-transform: rotate(720deg) scale(2, 2);
+  -moz-transform: rotate(720deg) scale(2, 2);
+  -o-transform: rotate(720deg) scale(2, 2);
+  -ms-transform: rotate(720deg) scale(2, 2);
+  transform: rotate(720deg) scale(2, 2);
+}
+#heart > .left {
+  background: red;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: rotate(45deg) translateX(31px);
+  bottom: 50px;
+  left: -50px;
+  border-radius: 50% 0 0 50%;
+}
+#heart > .right {
+  background: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate(45deg) translateX(-36px) translateY(65px);
+  bottom: 50px;
+  right: -50px;
+  border-radius: 50% 50% 0 0;
+}
+#heart > .bottom {
+  background: red;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+}
